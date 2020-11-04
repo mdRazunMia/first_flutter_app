@@ -43,7 +43,7 @@ class TabState extends State<TabsExample> {
                   ),
                 ),
                 ListTile(
-                  title: Text('Home'),
+                  title: Text('Home', style: TextStyle(color: Colors.deepOrangeAccent)),
                   onTap: () {
                     // Update the state of the app
                     // ...
@@ -52,7 +52,7 @@ class TabState extends State<TabsExample> {
                   },
                 ),
                 ListTile(
-                  title: Text('About'),
+                  title: Text('About',style: TextStyle(color: Colors.deepOrangeAccent)),
                   onTap: () {
                     // Update the state of the app
                     // ...
@@ -61,7 +61,7 @@ class TabState extends State<TabsExample> {
                   },
                 ),
                 ListTile(
-                  title: Text('contact'),
+                  title: Text('contact',style: TextStyle(color: Colors.deepOrangeAccent)),
                   onTap: () {
                     // Update the state of the app
                     // ...
