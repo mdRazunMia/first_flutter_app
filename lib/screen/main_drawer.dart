@@ -74,7 +74,7 @@ class MainDrawer extends StatelessWidget {
                 style: TextStyle(fontSize: 18),
               ),
               onTap: (){
-                Navigator.of(context).pushNamed(informationRoute);
+                Navigator.of(context).pushNamed(signUpRouter );
               },
           ),
           ListTile(

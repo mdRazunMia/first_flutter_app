@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './screen/person_screen.dart';
 
+import './screen/person_screen.dart';
 import './screen/main_drawer.dart';
 import './widgets/tabBar_widget.dart';
 import './screen/information_screen.dart';
