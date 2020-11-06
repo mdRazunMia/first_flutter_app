@@ -4,6 +4,7 @@ class MainDrawer extends StatelessWidget {
   static const routePerson = '/person_screen.dart';
   static const informationRoute = '/information_screen.dart';
   static const signUpRouter = '/signUp_screen.dart';
+  static const crudRoute = '/crud_screen.dart';
   Widget build(BuildContext context) {
     return Drawer(
       child: Column(
@@ -75,6 +76,16 @@ class MainDrawer extends StatelessWidget {
               ),
               onTap: (){
                 Navigator.of(context).pushNamed(signUpRouter );
+              },
+          ),
+          ListTile(
+              leading: Icon(Icons.settings),
+              title: Text(
+                'CrudOperation',
+                style: TextStyle(fontSize: 18),
+              ),
+              onTap: (){
+                Navigator.of(context).pushNamed(crudRoute);
               },
           ),
           ListTile(

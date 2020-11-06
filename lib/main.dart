@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_app/screen/crud_screen.dart';
 
 import './screen/person_screen.dart';
 import './screen/main_drawer.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
           MainDrawer.routePerson : (_) => PersonScreen(),
           MainDrawer.informationRoute : (_) => InformationScreen(),
           MainDrawer.signUpRouter : (_) => SignUpScreen(),
+          MainDrawer.crudRoute : (_) => CrudScreeen(),
       },
     );
   }
