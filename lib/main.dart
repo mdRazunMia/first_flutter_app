@@ -4,6 +4,7 @@ import './screen/person_screen.dart';
 import './screen/main_drawer.dart';
 import './widgets/tabBar_widget.dart';
 import './screen/information_screen.dart';
+import './screen/signUp_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         '/': (_) => TabsExample(),
           MainDrawer.routePerson : (_) => PersonScreen(),
           MainDrawer.informationRoute : (_) => InformationScreen(),
+          MainDrawer.signUpRouter : (_) => SignUpScreen(),
       },
     );
   }

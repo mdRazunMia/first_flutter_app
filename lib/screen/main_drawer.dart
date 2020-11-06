@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
   static const routePerson = '/person_screen.dart';
-  static const informationRoute = '/information_screen';
+  static const informationRoute = '/information_screen.dart';
+  static const signUpRouter = '/signUp_screen.dart';
   Widget build(BuildContext context) {
     return Drawer(
       child: Column(
@@ -60,6 +61,16 @@ class MainDrawer extends StatelessWidget {
               leading: Icon(Icons.info),
               title: Text(
                 'Information',
+                style: TextStyle(fontSize: 18),
+              ),
+              onTap: (){
+                Navigator.of(context).pushNamed(informationRoute);
+              },
+          ),
+          ListTile(
+              leading: Icon(Icons.account_box),
+              title: Text(
+                'SignUp',
                 style: TextStyle(fontSize: 18),
               ),
               onTap: (){
